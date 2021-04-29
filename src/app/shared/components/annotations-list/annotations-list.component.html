@@ -1,0 +1,13 @@
+<div *ngIf="state.Annotations?.length">
+  <h2>Annotations List:</h2>
+  <ul>
+    <li *ngFor="let annot of state.Annotations"
+        class="flex flex-jcsb {{annot.id == selectedAnnotId ? 'active' : '' }}"
+        (click)="setActiveAndZoomMap(annot.id, annot.type, annot.center)"
+    >
+
+      <span> {{annot.name}} </span>
+      <button class="deleteBtn" (click)="deleteAnnotation(annot.id, annot.type)">Delete</button>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,31 @@
+ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 220px;
+  width: 100%;
+  max-width: 380px;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 0;
+  background: #ffffff;
+  border: 3px solid #EB1F99;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 100;
+
+  li {
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    color:#58BAC6;
+
+    &:last-child {
+      border-bottom: none
+    }
+    &:hover, &:focus {
+      background-color: rgba(235, 31, 153, .3);
+    }
+  }
+}

@@ -1,0 +1,59 @@
+#search {
+  align-items: center;
+  background: #ffffff !important;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  transition: all 0.5s;
+  max-width: 380px;
+  margin: 20px auto;
+  border: 3px solid #EB1F99;
+  width: 100%;
+
+  .textinp {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    font-family: Arial;
+    outline: 0;
+    color:#58BAC6;
+    flex: 1;
+    font-size: 14px;
+    padding-left: 5px;
+
+    &::-moz-placeholder {
+      color: #fff;
+    }
+
+    &:-ms-.textinp-placeholder {
+      color: #fff;
+    }
+
+    &::placeholder {
+      color: #fff;
+    }
+
+  }
+
+  &:hover , &:focus {
+    background: #fe53bb;
+
+  }
+
+  & ::placeholder {
+    opacity: .5; /* Firefox */
+  }
+
+  & :-ms-input-placeholder {
+    opacity: .5;
+  }
+
+  & ::-ms-input-placeholder {
+    opacity: .5
+  }
+
+}

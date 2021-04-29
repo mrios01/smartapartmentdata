@@ -1,0 +1,9 @@
+
+<div *ngIf="locSuggestions?.length" (clickOff)="closeDropdown()" (clickElsewhere)="closeDropdown()">
+  <ul>
+    <li *ngFor="let loc of locSuggestions" (click)="setLocation(loc)">
+      {{loc.text}}
+      <span> {{loc.place_name}} </span>
+    </li>
+  </ul>
+</div>
